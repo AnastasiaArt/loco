@@ -1,0 +1,79 @@
+.carousel {
+  &__list {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 70px;
+
+    .VueCarousel-wrapper {
+      z-index: 105;
+    }
+
+    .VueCarousel-pagination {
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+      z-index: 999;
+      width: 320px;
+      text-align: right;
+
+      .VueCarousel-dot-container {
+        width: 100%;
+      }
+
+      .VueCarousel-dot {
+        border: 1px solid transparent;
+        background-clip: initial;
+        background-color: rgba($white, 0.7) !important;
+        margin: 0 10px;
+        width: 15px;
+        height: 15px;
+        padding: 0!important;
+        border-radius: 50%!important;
+
+        &--active {
+          background-color: $white !important;
+        }
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+    background-color: $red;
+    color: $white;
+    text-align: left;
+    max-height: 600px;
+
+  }
+}
+@include respond-to(md) {
+  .carousel {
+    &__list {
+      position: relative;
+      z-index: 100;
+      margin-bottom: 70px;
+
+      .VueCarousel-wrapper {
+        z-index: 105;
+      }
+
+      .VueCarousel-pagination {
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        z-index: 999;
+        width: 100%;
+        text-align: center;
+
+        .VueCarousel-dot {
+          border: 1px solid transparent;
+          background-clip: initial;
+          background-color: rgba($white, 0.7) !important;
+          margin: 0 10px;
+          width: 10px !important;
+          height: 10px !important;
+        }
+      }
+    }
+  }
+}

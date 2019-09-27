@@ -1,0 +1,74 @@
+.tender {
+  margin-top: 60px;
+  padding: 50px 0;
+  border-top: 10px solid $black;
+  border-bottom: 10px solid $black;
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    padding: 0 15%;
+    box-sizing: border-box;
+    margin-bottom: 85px;
+}
+
+&__list {
+  list-style:  none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 400;
+
+  pre {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Armour", "Arial", sans-serif;
+  }
+}
+
+  @for $i from 1 to 5 {
+    &__item {
+      position: relative;
+      padding-top: 200px;
+      width: 20%;
+      text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-image: url('/../../assets/tender#{$i}.png');
+        background-size: cover;
+        background-color: red;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .tender {
+    &__list {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 45%;
+
+      &:nth-child(3) {
+        width: 100%;
+      }
+    }
+  }
+
+}

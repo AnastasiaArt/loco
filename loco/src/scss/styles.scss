@@ -1,0 +1,70 @@
+@import "normalize";
+@import "variabless";
+@import "mixin";
+
+@include font-face("Armour", "../Fonts/ArmourRegular", 400, normal);
+@include font-face("Armour", "../Fonts/ArmourBold", 700, normal);
+@include font-face("ArmourCon", "../Fonts/ArmourCondensedXBold", 900, normal);
+@include font-face("Armour", "../Fonts/ArmourLight", 300, normal);
+
+body {
+  font-family: "Armour", "Arial", sans-serif;
+  color: $black;
+  background-color: $white;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 320px;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="range"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 5%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content {
+  background-image: url('/../assets/bg-content.png');
+  background-size: cover;
+}
+
+.footer {
+  min-height: 370px;
+  background-color: $black;
+  color: $white;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 2;
+}
+
+@import "blocks/header";
+@import "blocks/carousel";
+@import "blocks/intro";
+@import "blocks/tender";
+@import "blocks/speed";
+@import "blocks/content";

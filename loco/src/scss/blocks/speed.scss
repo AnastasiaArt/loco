@@ -1,0 +1,33 @@
+.speed {
+  width: 100%;
+  padding: 40px 10%;
+  box-sizing: border-box;
+  min-height: 400px;
+  background-color: $red;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__likes {
+
+    line-height: 1.5;
+    font-family: "ArmourCon", "Arial", sans-serif;
+    b {
+      font-size: 114px;
+    }
+    span {
+      font-size: 80px;
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+}
+
+@include  respond-to(md) {
+  .speed {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

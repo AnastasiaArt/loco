@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+
+
+  &__logo {
+    position: relative;
+    z-index: 50;
+    width: 50%;
+
+    &--zindex {
+      z-index: 999;
+      position: relative;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+  &__wrap {
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    max-width: 420px;
+    max-height: 220px;
+    padding: 15px;
+    width: 24.4%;
+    background-color: $black;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+}
+
+

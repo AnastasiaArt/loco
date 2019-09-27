@@ -1,0 +1,22 @@
+@mixin respond-to($breakpoint) {
+  $width-screen: map-get($breakpoints, $breakpoint);
+
+  @media (max-width: $width-screen) {
+    @content;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  display: $display;
+  position: $pos;
+  content: $content;
+}
+
+@mixin font-face($family, $path, $weight, $style) {
+  @font-face {
+    font-family: $family;
+    src: url("#{$path}.woff") format("woff"), url("#{$path}.woff2") format("woff2");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

@@ -1,0 +1,15 @@
+.content {
+  text-align: center;
+
+  &__tag{
+    line-height: 1.5;
+    font-family: "ArmourCon", "Arial", sans-serif;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+}

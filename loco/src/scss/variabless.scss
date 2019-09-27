@@ -1,0 +1,31 @@
+// Variables
+
+//colors
+$black: #221f20;
+$red: #d54943;
+$white: #ffffff;
+$gray-100: #f7f7f7;
+$gray-800: #221f20;
+
+// Body
+$body-bg: #222222;
+$body-color: $white;
+
+//Border
+$border-radius: 0;
+
+// Links
+
+
+// Grid breakpoints
+$breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+// transition conf
+$duration: 0.3s;
+$transition-style: ease-in-out;
