@@ -47,7 +47,7 @@ input[type="range"].visually-hidden {
 }
 
 .content {
-  background-image: url('/../assets/bg-content.png');
+  background-image: url('/public/static/bg-content.png');
   background-size: cover;
 }
 
@@ -68,3 +68,4 @@ input[type="range"].visually-hidden {
 @import "blocks/tender";
 @import "blocks/speed";
 @import "blocks/content";
+@import "blocks/gallery-list";

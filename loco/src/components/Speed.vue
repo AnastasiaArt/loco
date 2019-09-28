@@ -1,10 +1,10 @@
 <template>
     <div class="speed">
-        <img src="../assets/speed.png" alt="Speed" width="420" height="270">
+        <img src="../../public/static/speed.png" alt="Speed" width="420" height="270">
         <div class="speed__likes">
             <b>{{ currentLikes}}</b>
             <span>Likes</span>
-            <img src="../assets/like.png" alt="Speed" width="100" height="90">
+            <img src="../../public/static/like.png" alt="Speed" width="100" height="90">
         </div>
     </div>
 

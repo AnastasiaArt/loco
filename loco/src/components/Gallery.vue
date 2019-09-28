@@ -3,17 +3,25 @@
         <h2 class="content__tag">#UAxLoko</h2>
         <Speed/>
         <p class="content__text">Истории</p>
-        <img src="../assets/ball.png" alt="Slider image" width="1710" height="600">
+        <GalleryList />
         <p class="content__text">Больше историй</p>
     </div>
 </template>
 <script>
     import Speed from './Speed.vue';
+    import GalleryList from './GalleryList.vue';
 
     export default {
 
         components: {
-            Speed
+            Speed,
+            GalleryList
+        },
+        data() {
+            return {
+
+            }
         }
     }
 </script>
+

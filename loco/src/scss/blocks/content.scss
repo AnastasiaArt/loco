@@ -1,11 +1,13 @@
 .content {
   text-align: center;
+  position: relative;
 
   &__tag{
     line-height: 1.5;
     font-family: "ArmourCon", "Arial", sans-serif;
     font-size: 80px;
     text-align: center;
+    margin-top: 0;
   }
 
   &__text {
