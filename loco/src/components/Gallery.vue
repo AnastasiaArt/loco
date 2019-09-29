@@ -1,10 +1,10 @@
 <template>
     <div class="content">
-        <h2 class="content__tag">#UAxLoko</h2>
+        <a name="modal"></a>
+        <h2 class="content__tag">#UAxLoco</h2>
         <Speed/>
         <p class="content__text">Истории</p>
         <GalleryList />
-        <p class="content__text">Больше историй</p>
     </div>
 </template>
 <script>

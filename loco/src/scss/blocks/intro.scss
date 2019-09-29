@@ -6,23 +6,30 @@
     margin: 0;
     margin-bottom: 20px;
     text-align: justify;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 32px;
   }
 
   &__title {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1.5;
     text-align: center;
     margin: 0;
+    font-weight: 400;
   }
 }
 
 @include respond-to(md) {
   .intro {
-    padding: 0;
+    padding: 0 7%;
+
     &__title {
       display: none;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
     }
   }
 }

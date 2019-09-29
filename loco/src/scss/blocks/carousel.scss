@@ -44,10 +44,15 @@
     text-align: left;
     max-height: 600px;
 
+    img {
+      display: block;
+      line-height: 1;
+    }
   }
 }
 @include respond-to(md) {
   .carousel {
+
     &__list {
       position: relative;
       z-index: 100;

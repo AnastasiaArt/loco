@@ -1,10 +1,14 @@
 <template>
     <div class="speed">
-        <img src="../../public/static/speed.png" alt="Speed" width="420" height="270">
+        <div class="speed__img">
+        <img src="../../public/static/speed.png" alt="Speed" width="377" height="244">
+        </div>
         <div class="speed__likes">
-            <b>{{ currentLikes}}</b>
+            <b>{{ currentLikes }}</b>
             <span>Likes</span>
+            <div class="speed__icon">
             <img src="../../public/static/like.png" alt="Speed" width="100" height="90">
+            </div>
         </div>
     </div>
 

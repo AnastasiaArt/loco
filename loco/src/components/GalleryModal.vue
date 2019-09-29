@@ -8,10 +8,10 @@
 
         <div class="gallery-modal__description">
             <h3> {{clicked.title}}</h3>
-            <p><pre>{{clicked.text}}</pre></p>
+            <pre><p>{{clicked.text}}</p></pre>
             <button type="button" @click="$emit('next')" class="gallery-modal__next-btn">Следующая история</button>
         </div>
-        <button type="button" @click="$emit('close')" class="gallery-modal__close-btn">Закрыть</button>
+        <button type="button" @click="$emit('close')" class="gallery-modal__close-btn"></button>
 
     </div>
 </template>

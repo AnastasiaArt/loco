@@ -4,23 +4,41 @@
   box-sizing: border-box;
   min-height: 400px;
   background-color: $red;
+  background-image: url(/static/speed-lines-big.png);
+  background-size: cover;
+  background-position: left   center;
   color: $white;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   &__likes {
-
     line-height: 1.5;
     font-family: "ArmourCon", "Arial", sans-serif;
+    display: flex;
+    align-items: baseline;
+
     b {
-      font-size: 114px;
+      font-size: 104px;
+      min-width: 210px;
+      display: inline-block;
     }
     span {
-      font-size: 80px;
+      font-size: 72px;
       display: inline-block;
       margin: 0 20px;
     }
+  }
+
+  &__img {
+    width: 40%;
+    max-width: 420px;
+  }
+
+  &__icon {
+    width: 20%;
+    max-width: 100px;
+    display: inline-block;
   }
 }
 
@@ -29,5 +47,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(/static/speed-small-bg.png);
+    background-size: cover;
+    background-position: center center;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__icon {
+      width: 60px;
+      display: inline-block;
+    }
   }
 }
